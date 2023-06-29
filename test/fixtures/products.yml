@@ -1,0 +1,44 @@
+# == Schema Information
+#
+# Table name: products
+#
+#  id               :bigint           not null, primary key
+#  active           :boolean
+#  description      :text(65535)
+#  meta_description :string(255)
+#  meta_keywords    :string(255)
+#  meta_title       :string(255)
+#  name             :string(255)
+#  slug             :string(255)
+#  created_at       :datetime         not null
+#  updated_at       :datetime         not null
+#  category_id      :bigint           not null
+#
+# Indexes
+#
+#  index_products_on_category_id  (category_id)
+#
+# Foreign Keys
+#
+#  fk_rails_...  (category_id => categories.id)
+#
+
+one:
+  name: MyString
+  category: one
+  active: false
+  description: MyText
+  slug: MyString
+  meta_title: MyString
+  meta_description: MyString
+  meta_keywords: MyString
+
+two:
+  name: MyString
+  category: two
+  active: false
+  description: MyText
+  slug: MyString
+  meta_title: MyString
+  meta_description: MyString
+  meta_keywords: MyString

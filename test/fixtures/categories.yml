@@ -1,0 +1,25 @@
+# == Schema Information
+#
+# Table name: categories
+#
+#  id          :bigint           not null, primary key
+#  active      :boolean
+#  description :string(255)
+#  name        :string(255)
+#  slug        :string(255)
+#  created_at  :datetime         not null
+#  updated_at  :datetime         not null
+#  parent_id   :integer
+#
+
+one:
+  name: MyString
+  active: false
+  description: MyString
+  slug: MyString
+
+two:
+  name: MyString
+  active: false
+  description: MyString
+  slug: MyString
